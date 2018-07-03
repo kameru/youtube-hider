@@ -1,0 +1,21 @@
+{
+  "name": "Youtube Thumbnail Hider",
+  "version": "1.0",
+  "description": "Hide Youtube thumbnails and video",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "hide_thumb.css", "hide_video.css", "popup.js"
+  ],
+  "permissions" : [
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

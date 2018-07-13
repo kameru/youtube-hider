@@ -6,8 +6,14 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["hidingController.js"]
+    }
+  ],
   "web_accessible_resources": [
-    "hide_thumb.css", "hide_video.css", "popup.js"
+    "hide_thumb.css", "hide_video.css", "popup.js", "hidingController.js"
   ],
   "permissions" : [
     "activeTab",

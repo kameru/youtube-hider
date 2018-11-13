@@ -1,7 +1,7 @@
 ytd-thumbnail,
 ytd-playlist-thumbnail,
 #thumbnail-container,
-.ytd-popup-container,
+.ytp-cued-thumbnail-overlay-image,
 .ytp-tooltip.ytp-preview {
     display:none !important;
 }

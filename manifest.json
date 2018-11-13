@@ -21,6 +21,7 @@
     "declarativeContent"
   ],
   "page_action": {
+    "default_icon": "images/hide.png",
     "default_popup": "popup.html"
   },
   "manifest_version": 2

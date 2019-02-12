@@ -13,7 +13,7 @@
     }
   ],
   "web_accessible_resources": [
-    "hide_thumb.css", "hide_video.css", "popup.js", "hidingController.js"
+    "hide_thumb.css", "hide_video.css", "hide_icon.css", "popup.js", "hidingController.js"
   ],
   "permissions" : [
     "activeTab",

@@ -27,9 +27,10 @@ function removeStylesheet(type) {
     }
 }
 
-chrome.storage.sync.get(['thumb', 'video'], function(result) {
+chrome.storage.sync.get(['thumb', 'video', 'icon'], function(result) {
     onCheckChange('thumb', result.thumb);
     onCheckChange('video', result.video);
+    onCheckChange('icon', result.icon);
 });
 
 

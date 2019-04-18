@@ -1,7 +1,7 @@
 {
-  "name": "Youtube Thumbnail Hider",
+  "name": "Youtube Hider",
   "version": "1.0",
-  "description": "Hide Youtube thumbnails and video",
+  "description": "This is a Chrome extension to hide videos and images on YouTube.",
   "background": {
     "scripts": ["background.js"],
     "persistent": false

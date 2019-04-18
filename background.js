@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({thumb: true, video: true});
+    chrome.storage.sync.set({thumb: true, video: true, icon: true});
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
         chrome.declarativeContent.onPageChanged.addRules([
             {

@@ -1,3 +1,5 @@
+const ATTRIBUTE_LIST = ['thumb', 'video', 'icon'];
+
 function onCheckChange(type, value) {
     if (value) {
         addStylesheet(type);
@@ -27,10 +29,10 @@ function removeStylesheet(type) {
     }
 }
 
-chrome.storage.sync.get(['thumb', 'video', 'icon'], function(result) {
-    onCheckChange('thumb', result.thumb);
-    onCheckChange('video', result.video);
-    onCheckChange('icon', result.icon);
+chrome.storage.sync.get(ATTRIBUTE_LIST, function(result) {
+    ATTRIBUTE_LIST.forEach((key) => {
+        onCheckChange(key, result[key]);
+    })
 });
 
 
